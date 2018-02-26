@@ -64,12 +64,11 @@
       <div class="row">
         <form class="col s12">
           <div class="row">
-
             <div class="row">
               <div class="input-field col s6">
-                <i class="material-icons prefix">search</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Buscar</label>
+                <a (click)="Searchfunction()" id="btnSearch" class="waves-effect waves-light btn"><i class="material-icons">search</i></a>
+                <input type="text" id="autocomplete-input" class="word" requiered>
+                <label for="autocomplete-input">Buscar</label>
               </div>
 
             </div>
@@ -174,111 +173,11 @@
 
 <!-- Fin de formulario de registro --> 
 <div class="container">
-  <div class="row">
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../assets/images/product1.PNG">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title
-            <i class="material-icons right">more_vert</i>
-          </span>
-          <p>
-            <a href="#">This is a link</a>
-          </p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title
-            <i class="material-icons right">close</i>
-          </span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-
-    </div>
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../assets/images/product1.PNG">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title
-            <i class="material-icons right">more_vert</i>
-          </span>
-          <p>
-            <a href="#">This is a link</a>
-          </p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title
-            <i class="material-icons right">close</i>
-          </span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-
-    </div>
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../assets/images/product1.PNG">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title
-            <i class="material-icons right">more_vert</i>
-          </span>
-          <p>
-            <a href="#">This is a link</a>
-          </p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title
-            <i class="material-icons right">close</i>
-          </span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-
-    </div>
+  <div id="product" class="row flex">
+    
   </div>
-
 </div>
-<div class="container">
-  <div class="section">
 
-    <!--   Icon Section   -->
-    <div class="row">
-      <div class="col s12 m4">
-
-        <img src="assets/images/1.png" class="responsive-img" alt="">
-        <div class="icon-block">
-          <h6>Almohada Tupac</h6>
-          <p>$30</p>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <img src="assets/images/4.png" class="responsive-img" alt="">
-        <div class="icon-block">
-          <h6 class="center">Caja de herramientas BBQ</h6>
-          <p>$120</p>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <img src="assets/images/2.png" class="responsive-img" alt="">
-        <div class="icon-block">
-          <h6>Diario Grid Globo</h6>
-          <p>$30</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <br>
-  <br>
-</div>
 
 <footer class="page-footer">
   <div class="container">

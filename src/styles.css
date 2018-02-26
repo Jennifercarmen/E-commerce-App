@@ -118,3 +118,12 @@ div#modal1 {
     outline: 0;
     padding: 0 1rem;
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card .card-reveal {
+    height: auto;
+}
