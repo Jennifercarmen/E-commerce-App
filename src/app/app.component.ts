@@ -40,7 +40,7 @@ export class AppComponent {
                               <p>${"Stock: "+ info.available_quantity}</p>
                         </div>
                       </div>`
-        //$('#product').append(html);
+        $('#product').append(html);
         }
         $.ajax({
           url: ruta, 
@@ -55,6 +55,9 @@ export class AppComponent {
       success: getdata
     });
   }
+
+
+
   //Buscar por nombre 
   Searchfunction() {
     const proxy = 'https://cors-anywhere.herokuapp.com/';
