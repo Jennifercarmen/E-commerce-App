@@ -16,7 +16,7 @@ import { CategoriasComponent } from './categorias/categorias.component';
 export const appRoutes:Routes = [
   {path: "", component:InicioComponent} ,
 {path: "carrito", component:CarritoComponent},
-{path: "categorias", component:CarritoComponent}
+{path: "categorias", component:CategoriasComponent}
 
 ];
 

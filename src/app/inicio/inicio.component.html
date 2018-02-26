@@ -95,18 +95,7 @@
 
 	<div class="container">
 		<div id="product" class="row flex">
-			<div class="col s12 m3" *ngFor="let n of productos"> 
-				<div class="card" data-id="n.id">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="{{n.thumbnail}}">						
-					</div>
-					<div class="card-content">
-					  <span class="activator grey-text text-darken-4">{{n.title}}<i class="material-icons right">more_vert</i></span>
-					  <p><a >{{n.price}}</a></p>
-					  <button type="button" (click)="carrito(n);" >Añadir a carro</button>	
-					</div>
-				</div>
-			</div>
+	
 		</div>
 	</div>	
 	

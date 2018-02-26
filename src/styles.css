@@ -1,119 +1,110 @@
-/* -------------------------------------------------------- */
-/* Helpers */
+
 .text-center {
-    text-align: center;
+  text-align: center;
 }
-.text-justify{
-    text-align: justify;
+
+.text-justify {
+  text-align: justify;
 }
-.text-uppercase{
-    text-transform: uppercase;
+
+.text-uppercase {
+  text-transform: uppercase;
 }
-#mainNav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    background-color: transparent;
-    box-shadow: none;
-}
-/* Smartphones (portrait & landscape) */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    #mainNav {
-    background-color: white;
-    }
-    .navmd {
-        display: none;
-    }
-    nav a {
-        color: black;
-    }
-}
+
 .icon-block {
-    padding: 0 15px;
+  padding: 0 15px;
 }
+
 .icon-block .material-icons {
-    font-size: inherit;
+  font-size: inherit;
 }
-  
-.no-pad-bot {
-    padding-top: 100px;
-    text-align: center;
-    background: url("assets/images/fondo1.jpg") no-repeat bottom center scroll;
-   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 nav ul a {
-    color:#333333;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1em;
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1em;
 }
-@media only screen and (min-width: 993px){
+
+@media only screen and (min-width: 993px) {
   .container {
     width: 90%;
-    }
+  }
 }
+
 .navmd {
-    background-color: white;
-    padding: 0px 20px;
+  background-color: white;
+  padding: 0px 20px;
 }
+
 footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    line-height: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
 }
+
 .icons li {
-    display: inline-block;
-    margin: 5px;
+  display: inline-block;
+  margin: 5px;
 }
+
 div#modal1 {
-    height: 500px;
-    width: 500px;
+  height: 500px;
+  width: 500px;
 }
+
 @media (min-width: 768px) {
-    .icons {
-        transform: translateY(390%);
-    }
+  .icons {
+    transform: translateY(390%);
+  }
 }
+
 .page-footer {
-    padding-top: 20px;
-    color: #fff;
-    background-color: #51b7a5;
+  padding-top: 20px;
+  color: #fff;
+  background-color: #51b7a5;
 }
+
 .btn:hover, .btn-large:hover {
-    background-color: #f84c00;
-    color: white;
+  background-color: #f84c00;
+  color: white;
 }
-.btn, .btn-large {
-    color: white;
+
+.btn,
+.btn-large {
+  color: white;
 }
-.btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
-    font-size: 0.9rem;
-    outline: 0;
-    padding: 0 1rem;
+
+.btn,
+.btn-large,
+.btn-floating,
+.btn-large,
+.btn-flat {
+  font-size: 0.9rem;
+  outline: 0;
+  padding: 0 1rem;
 }
+
 .flex {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .card .card-reveal {
-    height: auto;
+  height: auto;
 }
+
 footer ul {
-    width: 100%;
+  width: 100%;
 }
+
 .btn-floating i {
-    width: auto
+  width: auto;
 }
+
 @media(min-width: 768px) {
-    .icons { 
-        transform: translateY(0%);
-    }
+  .icons {
+    transform: translateY(0%);
+  }
 }
