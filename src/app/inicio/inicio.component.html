@@ -1,0 +1,113 @@
+
+	        <ul class="categoriasDesktop">
+					<div class="container">
+				
+					  <div class="row" id="categorias">
+						<div   class="categoria col s4" *ngFor="let n of my_categorias">
+						  <li >
+							<a  (mouseover)=obtSubcategorias(n)  href="#!" data-id="{{n.id}}">
+							  {{n.name}}
+							</a>
+						  </li>
+						  <div class="subcategorias col s12"   *ngFor="let data of my_subcategorias">
+							  <li *ngIf="n.id == comparacion">
+								<a class="categ"   (click)="ver(data)" data-id="{{data.id}}">{{data.name}}</a>
+							  </li>
+						  </div>						
+						</div>
+					  
+					  </div>
+					</div>
+				</ul>
+				<div class="container">
+					<div class="row">
+					  <div class="col s6">
+						<div class="row">
+						  <form class="col s12">
+							<div class="row">
+							  <div class="row">
+								<div class="input-field col s6">
+								  <a (click)="Searchfunction()" id="btnSearch" class="waves-effect waves-light btn"><i class="material-icons">search</i></a>
+								  <input type="text" id="autocomplete-input" class="word" requiered>
+								  <label for="autocomplete-input">Buscar</label>
+								</div>
+				  
+							  </div>
+							</div>
+						  </form>
+						</div>
+					  </div>
+					  <div class="col s6 ">
+						<p class="right">
+						  <a routerLink="/carrito">
+							<span>Registro</span>
+						  </a> |
+						  <a class="waves-effect waves-light btn modal-trigger orange  accent-4" href="#modal1">Login</a>
+						  <span></span>
+						</p>
+						<!-- Modal Structure -->
+						<div id="modal1" class="modal" materialize="modal">
+						  <div class="modal-content  blue lighten-4">
+							<h5>Iniciar Sesion</h5>
+						  </div>
+						  <div class="container">
+							<div class="row">
+							  <form class="col s12">
+								<div class="row">
+								  <div class="input-field col s12">
+									<input id="last_name" type="text" class="validate">
+									<label for="last_name">Email</label>
+								  </div>
+								</div>
+								<div class="row">
+								  <div class="input-field col s12">
+									<input id="last_name" type="text" class="validate">
+									<label for="last_name">Password</label>
+								  </div>
+								</div>
+				  
+								<div class="row">
+								  <div class="col s12">
+									<p>¿Olvidaste tu clave?</p>
+								  </div>
+								</div>
+								<div class="row">
+								  <div class="col s4">
+									<button class="btn waves-effect waves-light  red darken-4 " type="submit" name="action">Login
+									</button>
+								  </div>
+								  <div class="col s8">
+									<button class="btn waves-effect waves-light  indigo darken-3" type="submit" name="action">
+									  <i class="fa fa-facebook" aria-hidden="true"></i>
+									  Continuar con facebook
+									</button>
+								  </div>
+								</div>
+				  
+							  </form>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+
+	<div class="container">
+		<div id="product" class="row flex">
+			<div class="col s12 m3" *ngFor="let n of productos"> 
+				<div class="card" data-id="n.id">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="{{n.thumbnail}}">						
+					</div>
+					<div class="card-content">
+					  <span class="activator grey-text text-darken-4">{{n.title}}<i class="material-icons right">more_vert</i></span>
+					  <p><a >{{n.price}}</a></p>
+					  <button type="button" (click)="carrito(n);" >Añadir a carro</button>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	

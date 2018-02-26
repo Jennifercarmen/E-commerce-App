@@ -1,289 +1,49 @@
-<div class="slider" materialize="slider">
-  <ul class="slides">
-    <li>
-      <img src="../assets/images/fondo4.jpg">
-      <!-- random image -->
-      <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <img src="assets/images/fondo.jpg">
-      <!-- random image -->
-      <div class="caption left-align">
-        <h3>Left Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <img src="assets/images/fondo3.jpg">
-      <!-- random image -->
-      <div class="caption right-align">
-        <h3>Right Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
+<div>   
+    <nav>
+        <div class="nav-wrapper">
+          <a routerLink="/" class="brand-logo">e-commerce</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse" materialize="sideNav"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">      
+            <li><a routerLink="/envio"><i class="material-icons">airport_shuttle</i></a></li>
+            <li><a href="#"><i class="material-icons">account_circle</i></a></li>
+            <li><a routerLink="/carrito"><i class="material-icons">shopping_cart</i></a></li>      
+          </ul>    
+          <ul class="side-nav" id="mobile-demo">    
+            <li><a routerLink="/">Envio</a></li>
+            <li><a routerLink="/">Usuario</a></li>
+            <li><a routerLink="/carrito">Carrito</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="slider" materialize="slider">
+          <ul class="slides">
+            <li>
+              <img src="../assets/images/fondo4.jpg">
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>50% de descuento!</h3>
+                <h5 class="light grey-text text-lighten-3">Solo por hoy! Aprovecha</h5>
+              </div>
+            </li>
+            <li>
+              <img src="assets/images/fondo.jpg">
+              <!-- random image -->
+              <div class="caption left-align">
+                <h3>Mira nuestro nuevo catálogo</h3>
+                <h5 class="light grey-text text-lighten-3">Con mas productos pensando en ti.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="assets/images/fondo3.jpg">
+              <!-- random image -->
+              <div class="caption right-align">
+                <h3>Primer cierra puestas del año</h3>
+                <h5 class="light grey-text text-lighten-3">Del 25 al 28 de febrero</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-  </ul>
+
+  <router-outlet></router-outlet>  
 </div>
-<div class="container">
-  <nav class="navmd">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"></a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="#about">Casa</a>
-        </li>
-        <li>
-          <a href="#portafolio">Tech</a>
-        </li>
-        <li>
-          <a href="#contact">Moda y accesorios</a>
-        </li>
-        <li>
-          <a href="#contact">Salud y Belleza</a>
-        </li>
-        <li>
-          <a href="#contact">Juegos y juguetes</a>
-        </li>
-        <li>
-          <a href="#contact">Joyas y relojes</a>
-        </li>
-        <li>
-          <a href="#contact">Deportes y Fitness</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col s6">
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="row">
-              <div class="input-field col s6">
-                <a (click)="Searchfunction()" id="btnSearch" class="waves-effect waves-light btn"><i class="material-icons">search</i></a>
-                <input type="text" id="autocomplete-input" class="word" requiered>
-                <label for="autocomplete-input">Buscar</label>
-              </div>
-
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="col s6 ">
-      <p class="right">
-        <a href="">
-          <span>Registro</span>
-        </a> |
-        <a class="waves-effect waves-light btn modal-trigger orange  accent-4" href="#modal1">Login</a>
-        <span></span>
-      </p>
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal" materialize="modal">
-        <div class="modal-content  blue lighten-4">
-          <h5>Iniciar Sesion</h5>
-        </div>
-        <div class="container">
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Password</label>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col s12">
-                  <p>¿Olvidaste tu clave?</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s4">
-                  <button class="btn waves-effect waves-light  red darken-4 " type="submit" name="action">Login
-                  </button>
-                </div>
-                <div class="col s8">
-                  <button class="btn waves-effect waves-light  indigo darken-3" type="submit" name="action">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    Continuar con facebook
-                  </button>
-                </div>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Formulario de registro  -->
-<!-- <div class="container">
-  <div class="row">
-    <form class="col s6  offset-s3">
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s6">
-          <button class="btn waves-effect waves-light  red darken-4 " type="submit" name="action">
-            <i class="fa fa-google" aria-hidden="true"></i>
-            Regístrate con Google
-          </button>
-        </div>
-        <div class="col s6">
-          <button class="btn waves-effect waves-light  indigo darken-3" type="submit" name="action">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            Regístrate con facebook
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
-          <div class="g-recaptcha" data-sitekey="6LcZQ0gUAAAAAEphkWR3IxHAIhjX3UlfbCj_VNMG"></div>
-
-        </div>
-
-      </div>
-    </form>
-  </div>
-</div> -->
-
-<!-- Fin de formulario de registro --> 
-<div class="container">
-  <div id="product" class="row flex">
-    
-  </div>
-</div>
-
-
-<footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        Compras
-        <!-- <figure>
-                    <img src="assets/images/logoBlanco.png" class="img-responsive" alt="Logo Labcar">
-                </figure> -->
-        <hr>
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div class="col m3 col l3 col xl3  hide-on-small-only	">
-        <ul class="icons">
-          <li>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-apple" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-play" aria-hidden="true"></i>
-          </li>
-        </ul>
-
-      </div>
-      <div class="col s5 col  m3 col l3 col xl3">
-        <ul>
-          <li>
-            <a class="white-text" href="#!">Link 1</a>
-          </li>
-          <li>
-            <a class="white-text" href="#!">Link 2</a>
-          </li>
-          <li>
-            <a class="white-text" href="#!">Link 3</a>
-          </li>
-          <li>
-            <a class="white-text" href="#!">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col s7 hide-on-large-only	">
-        <ul class="icons">
-          <li>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-apple" aria-hidden="true"></i>
-          </li>
-          <li>
-            <i class="fa fa-play" aria-hidden="true"></i>
-          </li>
-        </ul>
-        <div class="images-footer">
-          <figure>
-            <img src="assets/images/appstore.png" class="responsive-img" alt="AppStore">
-          </figure>
-          <figure>
-            <img src="assets/images/enBadgeWebGeneric.png" class="responsive-img" alt="Google Play">
-          </figure>
-        </div>
-      </div>
-      <div class="col m3 col l3 col xl3 hide-on-small-only	">
-        <h5 class="white-text">Connect</h5>
-        <ul>
-          <li>
-            <a class="white-text" href="#!">Link 1</a>
-          </li>
-          <li>
-            <a class="white-text" href="#!">Link 2</a>
-          </li>
-          <li>
-            <a class="white-text" href="#!">Link 3</a>
-          </li>
-          <li>
-            <a class="white-text" href="#!">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-3 col l3 col xl3 hide-on-small-only	">
-        <div class="images-footer">
-          <figure>
-            <img src="../../assets/images/appstore.png" class="responsive-img" alt="AppStore">
-          </figure>
-          <figure>
-            <img src="../../assets/images/enBadgeWebGeneric.png" class="responsive-img" alt="Google Play">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-
-    <div class="container">
-
-      © 2018 technologies Inc.
-    </div>
-  </div>
-</footer>

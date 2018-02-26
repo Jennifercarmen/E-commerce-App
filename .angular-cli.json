@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "webcomercio"
+    "name": "e-jennifer"
   },
   "apps": [
     {
@@ -21,7 +21,6 @@
       "styles": [
         "../node_modules/materialize-css/dist/css/materialize.css",
         "styles.css"
-
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
