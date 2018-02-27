@@ -1,49 +1,69 @@
-<div>   
-    <nav>
-        <div class="nav-wrapper">
-          <a routerLink="/" class="brand-logo">e-commerce</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse" materialize="sideNav"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">      
-            <li><a routerLink="/envio"><i class="material-icons">airport_shuttle</i></a></li>
-            <li><a href="#"><i class="material-icons">account_circle</i></a></li>
-            <li><a routerLink="/carrito"><i class="material-icons">shopping_cart</i></a></li>      
-          </ul>    
-          <ul class="side-nav" id="mobile-demo">    
-            <li><a routerLink="/">Envio</a></li>
-            <li><a routerLink="/">Usuario</a></li>
-            <li><a routerLink="/carrito">Carrito</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="slider" materialize="slider">
-          <ul class="slides">
-            <li>
-              <img src="../assets/images/fondo4.jpg">
-              <!-- random image -->
-              <div class="caption center-align">
-                <h3>50% de descuento!</h3>
-                <h5 class="light grey-text text-lighten-3">Solo por hoy! Aprovecha</h5>
-              </div>
-            </li>
-            <li>
-              <img src="assets/images/fondo.jpg">
-              <!-- random image -->
-              <div class="caption left-align">
-                <h3>Mira nuestro nuevo catálogo</h3>
-                <h5 class="light grey-text text-lighten-3">Con mas productos pensando en ti.</h5>
-              </div>
-            </li>
-            <li>
-              <img src="assets/images/fondo3.jpg">
-              <!-- random image -->
-              <div class="caption right-align">
-                <h3>Primer cierra puestas del año</h3>
-                <h5 class="light grey-text text-lighten-3">Del 25 al 28 de febrero</h5>
-              </div>
-            </li>
-          </ul>
-        </div>
+<div>
+  <nav class="teal lighten-3">
+    <div class="nav-wrapper">
+      <a routerLink="/" class="brand-logo">E-commerce</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse" materialize="sideNav">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a routerLink="/envio">
+            <i class="material-icons white-text">airport_shuttle</i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons white-text">account_circle</i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/carrito">
+            <i class="material-icons white-text">shopping_cart</i>
+          </a>
+        </li>
+      </ul>
 
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a routerLink="/">Envio</a>
+        </li>
+        <li>
+          <a routerLink="/">Usuario</a>
+        </li>
+        <li>
+          <a routerLink="/carrito">Carrito</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="slider" materialize="slider">
+    <ul class="slides">
+      <li>
+        <img src="../assets/images/fondo4.jpg">
+        <!-- random image -->
+        <div class="caption center-align">
+          <h1>50% de descuento!</h1>
+          <h5 class="light grey-text text-lighten-3">Solo por hoy! Aprovecha</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/fondo.jpg">
+        <!-- random image -->
+        <div class="caption left-align">
+          <h1>Mira nuestro nuevo catálogo</h1>
+          <h5 class="light grey-text text-lighten-3">Con mas productos pensando en ti.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="assets/images/fondo3.jpg">
+        <!-- random image -->
+        <div class="caption right-align">
+          <h1>Primer cierra puestas del año</h1>
+          <h5 class="light grey-text text-lighten-3">Del 25 al 28 de febrero</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-  <router-outlet></router-outlet>  
+  <router-outlet></router-outlet>
 </div>
